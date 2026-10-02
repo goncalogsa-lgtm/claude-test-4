@@ -1,0 +1,187 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>OUTSTATE — Streetwear from the edge of Europe</title>
+  <meta name="description" content="OUTSTATE is Portuguese streetwear. Heavyweight cotton, cut and sewn in the north of Portugal. Drop 03 — Atlântico." />
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Anton&family=Instrument+Serif:ital@0;1&family=Inter+Tight:wght@400;500;600&family=JetBrains+Mono:wght@400;500&display=swap" rel="stylesheet" />
+  <link rel="stylesheet" href="styles.css" />
+</head>
+<body>
+
+  <!-- Announcement -->
+  <div class="ticker" aria-label="Announcements">
+    <div class="ticker__track">
+      <span>Drop 03 — Atlântico · Out now</span><span>Feito em Portugal</span><span>Free EU shipping over €150</span><span>Heavyweight 420gsm cotton</span><span>Lisboa · Porto · Nazaré</span>
+      <span aria-hidden="true">Drop 03 — Atlântico · Out now</span><span aria-hidden="true">Feito em Portugal</span><span aria-hidden="true">Free EU shipping over €150</span><span aria-hidden="true">Heavyweight 420gsm cotton</span><span aria-hidden="true">Lisboa · Porto · Nazaré</span>
+    </div>
+  </div>
+
+  <!-- Nav -->
+  <header class="nav">
+    <a href="#" class="nav__logo" aria-label="OUTSTATE home">OUTSTATE<sup>PT</sup></a>
+    <nav class="nav__links" aria-label="Primary">
+      <a href="#shop">Shop</a>
+      <a href="#lookbook">Lookbook</a>
+      <a href="#story">Story</a>
+      <a href="#crew">Crew</a>
+    </nav>
+    <button class="nav__cart" id="cartOpen" aria-label="Open bag">
+      Bag <span class="nav__count" id="cartCount">0</span>
+    </button>
+  </header>
+
+  <main>
+    <!-- Hero -->
+    <section class="hero">
+      <div class="hero__media">
+        <img data-img="hero" alt="Model in a cobalt OUTSTATE hoodie on a cobbled Alfama street with a yellow tram behind" />
+      </div>
+      <div class="hero__meta mono">
+        <span>38.7223° N, 9.1393° W</span>
+        <span>Drop 03 / Atlântico</span>
+        <span>FW26</span>
+      </div>
+      <div class="hero__copy">
+        <p class="hero__kicker serif">Streetwear from the edge of Europe.</p>
+        <h1 class="hero__title">OUT<span>STATE</span></h1>
+        <div class="hero__cta">
+          <a href="#shop" class="btn btn--light">Shop the drop</a>
+          <a href="#lookbook" class="btn btn--ghost">View lookbook</a>
+        </div>
+      </div>
+    </section>
+
+    <!-- Manifesto strip -->
+    <section class="manifesto">
+      <div class="manifesto__tiles" aria-hidden="true"></div>
+      <div class="manifesto__inner">
+        <span class="label mono">(01) — Manifesto</span>
+        <p class="manifesto__text">
+          Built where the land runs out and the <em class="serif">Atlantic</em> begins.
+          Cut in Guimarães, washed in Porto, worn on the hills of Lisboa.
+          <em class="serif">Saudade</em>, but make it heavyweight.
+        </p>
+      </div>
+    </section>
+
+    <!-- Shop -->
+    <section class="shop" id="shop">
+      <div class="section-head">
+        <span class="label mono">(02) — Shop</span>
+        <h2 class="display">Drop 03<br /><em class="serif">Atlântico</em></h2>
+        <div class="filters" role="tablist" aria-label="Filter products">
+          <button class="chip is-active" data-filter="all">All</button>
+          <button class="chip" data-filter="tops">Tops</button>
+          <button class="chip" data-filter="outer">Outerwear</button>
+          <button class="chip" data-filter="bottoms">Bottoms</button>
+        </div>
+      </div>
+      <div class="grid" id="productGrid"></div>
+    </section>
+
+    <!-- Lookbook -->
+    <section class="lookbook" id="lookbook">
+      <div class="section-head section-head--dark">
+        <span class="label mono">(03) — Lookbook</span>
+        <h2 class="display">Três<br /><em class="serif">cidades</em></h2>
+        <p class="section-head__aside">Three places, one coastline. Shot on 35mm between Porto, Lisboa and the big waves of Nazaré.</p>
+      </div>
+      <div class="look">
+        <figure class="look__item look__item--a">
+          <img data-img="porto" alt="Two friends in OUTSTATE against a wall of blue azulejo tiles in Porto" loading="lazy" />
+          <figcaption class="mono"><span>01</span> Porto — Ribeira <span>41.1408° N</span></figcaption>
+        </figure>
+        <figure class="look__item look__item--b">
+          <img data-img="tejo" alt="Skater in a black windbreaker on stone steps by the Tagus at dusk" loading="lazy" />
+          <figcaption class="mono"><span>02</span> Lisboa — Tejo <span>38.7071° N</span></figcaption>
+        </figure>
+        <figure class="look__item look__item--c">
+          <img data-img="nazare" alt="Model in a cream knit on a cliff above huge Atlantic waves in Nazaré" loading="lazy" />
+          <figcaption class="mono"><span>03</span> Nazaré — Praia do Norte <span>39.6049° N</span></figcaption>
+        </figure>
+      </div>
+    </section>
+
+    <!-- Story -->
+    <section class="story" id="story">
+      <div class="story__left">
+        <span class="label mono">(04) — Story</span>
+        <blockquote class="story__quote serif">
+          “We’re from a small country that always looked <em>outward</em>. OUTSTATE is that look — out of the state, out to sea.”
+        </blockquote>
+        <p class="story__sig mono">— Founders, Lisboa 2024</p>
+      </div>
+      <dl class="stats">
+        <div><dt class="mono">Made in</dt><dd>Guimarães</dd></div>
+        <div><dt class="mono">Cotton weight</dt><dd>420<small>gsm</small></dd></div>
+        <div><dt class="mono">Km to the factory</dt><dd>&lt;350</dd></div>
+        <div><dt class="mono">Pieces per drop</dt><dd>300</dd></div>
+      </dl>
+    </section>
+
+    <!-- Crew / newsletter -->
+    <section class="crew" id="crew">
+      <div class="crew__inner">
+        <span class="label mono">(05) — Junta-te à crew</span>
+        <h2 class="crew__title">First in line for<br /><em class="serif">Drop 04.</em></h2>
+        <form class="crew__form" id="crewForm">
+          <label for="email" class="sr-only">Email</label>
+          <input id="email" type="email" required placeholder="o.teu@email.pt" autocomplete="email" />
+          <button class="btn btn--dark" type="submit">Subscribe</button>
+        </form>
+        <p class="crew__note mono" id="crewNote" aria-live="polite">No spam. One email per drop.</p>
+      </div>
+    </section>
+  </main>
+
+  <footer class="footer">
+    <div class="footer__flag" aria-hidden="true"><span></span><span></span></div>
+    <div class="footer__cols">
+      <div>
+        <p class="mono label">Shop</p>
+        <a href="#shop">New in</a><a href="#shop">Tops</a><a href="#shop">Outerwear</a><a href="#shop">Bottoms</a>
+      </div>
+      <div>
+        <p class="mono label">Help</p>
+        <a href="#">Shipping</a><a href="#">Returns</a><a href="#">Size guide</a><a href="#">Contact</a>
+      </div>
+      <div>
+        <p class="mono label">Stores</p>
+        <span>Rua da Rosa 42, Lisboa</span><span>Rua das Flores 18, Porto</span>
+      </div>
+      <div>
+        <p class="mono label">Follow</p>
+        <a href="#">Instagram</a><a href="#">TikTok</a><a href="#">Spotify</a>
+      </div>
+    </div>
+    <p class="footer__word" aria-hidden="true">OUTSTATE</p>
+    <div class="footer__base mono">
+      <span>© 2026 OUTSTATE — Feito em Portugal</span>
+      <span>Lisboa · Porto · Nazaré</span>
+    </div>
+  </footer>
+
+  <!-- Cart drawer -->
+  <div class="scrim" id="scrim" hidden></div>
+  <aside class="drawer" id="drawer" aria-label="Your bag" aria-hidden="true">
+    <div class="drawer__head">
+      <h3 class="display">Bag</h3>
+      <button class="drawer__close mono" id="cartClose" aria-label="Close bag">Close ✕</button>
+    </div>
+    <ul class="drawer__list" id="cartList"></ul>
+    <div class="drawer__foot">
+      <div class="drawer__row mono"><span>Subtotal</span><span id="cartTotal">€0</span></div>
+      <p class="drawer__ship mono" id="cartShip"></p>
+      <button class="btn btn--dark btn--block">Checkout</button>
+    </div>
+  </aside>
+
+  <div class="toast mono" id="toast" role="status" aria-live="polite"></div>
+
+  <script src="script.js"></script>
+</body>
+</html>
